@@ -1,0 +1,41 @@
+<head>
+  <style type="text/css">
+    body {
+  background: linear-gradient(to bottom, #ffd500, #ff9500);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Ratio de l'aspect de la vidéo */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+  </style>
+<div class="csm">
+<form>
+  <select onchange="document.getElementById('video').src=this.value">
+    <option>Sélectionnez un épisode</option>
+    <option value="https://sendvid.com/embed/bbfcv2ez">Episode 1</option>
+    <option value="https://sendvid.com/embed/y3a4jxc5">Episode 2</option>
+    <option value="https://sendvid.com/embed/axjlmcyu">Episode 3</option>
+    <option value="https://sendvid.com/embed/of5706oz">Episode 4</option>
+    <option value="https://sendvid.com/embed/8ri8v0jt">Episode 5</option>
+    <option value="https://sendvid.com/embed/wpudno4s">Episode 6</option>
+    <option value="https://sendvid.com/embed/l5uvyo38">Episode 7</option>
+    <option value="https://sendvid.com/embed/5d3hl3im">Episode 8</option>
+    <option value="https://sendvid.com/embed/zm1nxnb3">Episode 9</option>
+    <option value="https://sendvid.com/embed/fcx7faic">Episode 10</option>
+    <option value="https://sendvid.com/embed/io4sb70z">Episode 11</option>
+    <option value="https://sendvid.com/embed/qpsvscxa">Episode 12</option>
+  </select>
+</form>
+  <iframe id="video" width="560" height="315" src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+</div>
+</head>
